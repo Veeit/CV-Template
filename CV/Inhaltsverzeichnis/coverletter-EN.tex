@@ -1,0 +1,170 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[ngerman, 11pt, a4paper]{awesome-cv}
+\usepackage[utf8]{inputenc}
+%\usepackage{german}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+%\definecolor{awesome}{HTML}{214D87}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\input{../variables.tex}
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./veit}
+\name{Veit}{Progl}
+\position{Exmaple Job Title}
+\address{PLZ City, Street, Germany}
+
+\mobile{(+49) 176-000000}
+\email{exmalpe@example.com}
+\homepage{veit.pro}
+\github{veeit}
+\linkedin{Veit Progl}
+% \gitlab{V.P}
+% \twitter{@VoxelVoxels}
+% \medium{VeitProgl}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {\CompanyName} 
+  {\CompanyCity,\\ \CompanyCountry}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application -- \JobTitle}
+% How the letter is opened
+%\letteropening{\char"3}
+% How the letter is closed
+%\letterclosing{\char"3}
+% Any enclosures with the letter
+%\letterenclosure[Anhang]{Lebenslauf}
+\include{awesome-cv}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Veit Progl~~~·~~~Table of contents}1
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Table of contents}
+
+\hyperlink{page.2}{
+\textbf{Coverletter}
+\hfill
+2 \\
+}
+
+\hyperlink{page.3}{
+\textbf{Curriculum vitae}
+\hfill
+3 \\
+}
+
+%\hyperlink{page.4}{
+%\textbf{Anschreiben Deutsch}
+%\hfill
+%4 \\
+%}
+%
+%\hyperlink{page.5}{
+%\textbf{Lebenslauf Deutsch}
+%\hfill
+%5 \\
+%}
+
+\hyperlink{page.4}{
+\textbf{Example PDF Englich}
+\hfill
+4 \\
+}
+
+%\hyperlink{page.8}{
+%\textbf{IHK Ausbildungszeugnis}
+%\hfill
+%8 \\
+%}
+
+\end{cvletter}
+
+\includepdf[pages=-]{../coverletter-EN/coverletter.pdf}
+\includepdf[pages=-]{../CV-EN/CV.pdf}
+
+%\includepdf[pages=-]{../coverletter/coverletter.pdf}
+%\includepdf[pages=-]{../CV/CV.pdf}
+
+\includepdf[pages=-]{../Zeugnise/example.pdf}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
+\end{document}

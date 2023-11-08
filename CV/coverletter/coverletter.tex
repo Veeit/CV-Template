@@ -1,0 +1,143 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[ngerman, 11pt, a4paper]{awesome-cv}
+\usepackage[utf8]{inputenc}
+\usepackage{german}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+%\definecolor{awesome}{HTML}{214D87}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\input{../variables.tex}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./veit}
+\name{Veit}{Progl}
+\position{Exmaple Job Title}
+\address{PLZ City, Street, Germany}
+
+\mobile{(+49) 176-000000}
+\email{exmalpe@example.com}
+\homepage{veit.pro}
+\github{veeit}
+\linkedin{Veit Progl}
+% \gitlab{V.P}
+% \twitter{@VoxelVoxels}
+% \medium{VeitProgl}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {\CompanyName}
+  {\CompanyCity,\\ \CompanyCountryDE}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Bewerbung -- \JobTitle}
+% How the letter is opened
+\letteropening{Sehr geehrtere Damen und Herren,}
+% How the letter is closed
+\letterclosing{Mit freundlichen Grüßen,}
+% Any enclosures with the letter
+%\letterenclosure[Anhang]{Lebenslauf}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Veit Progl~~~·~~~Anschreiben}1
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Über mich}
+It's important to me that you're happy. If you do too much it's going to lose its effectiveness. Of course he's a happy little stone, cause we don't have any other kind. You have to make almighty decisions when you're the creator.
+
+\lettersection{Warum \WhyCompany?} 
+\WhyCompanyADE
+
+\lettersection{Warum ich?}
+
+I want everbody to be happy. That's what it's all about. All kinds of happy little splashes. Let your heart take you to wherever you want to be. You can work and carry-on and put lots of little happy things in here.
+
+Absolutely no pressure. You are just a whisper floating across a mountain. If you don't think every day is a good day - try missing a few. You'll see. Let's go up in here, and start having some fun We'll paint one happy little tree right here. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul.
+
+You can do anything your heart can imagine. Be careful. You can always add more - but you can't take it away. Anything you want to do you can do here. Son of a gun.
+
+This is probably the greatest thing that's ever happened in my life. Anyone can paint. Let's get crazy. Get tough with it, get strong.
+
+Remember how free clouds are. They just lay around in the sky all day long. Isn't it fantastic that you can change your mind and create all these happy things? There's not a thing in the world wrong with washing your brush. The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
